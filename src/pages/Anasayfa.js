@@ -8,15 +8,11 @@ class Anasayfa extends React.Component{
   render() {
     return (
       <div className="wrapper anasayfa">
-
-        <p>Starwars filmlerinin tamamı</p>
-
+        <p>StarWars film ve oyuncularının tamamı</p>
         {/* Filmleri Listele */}
         <Filmler />
-        
         {/* Oyuncuları Listele */}
         <Oyuncular />
-
       </div>
     );
   }

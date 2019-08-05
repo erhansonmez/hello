@@ -27,6 +27,7 @@ class Filmler extends React.Component{
   render() {
     return (
       <div className="wrapper filmler">
+        <p>StarWars filmlerinin tamamı</p>
         <ApolloProvider client={client}>
           {/* Filmlerin Listelemesi */}
           <div className="section">

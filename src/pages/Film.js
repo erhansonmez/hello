@@ -28,7 +28,8 @@ class Film extends React.Component{
   render() {
     return (
       <div className="wrapper anasayfa">
-        <Link onClick={() => this.props.history.goBack()}>Geri Git</Link>
+        <Link className="goback" onClick={() => this.props.history.goBack()}>Geri Git</Link>
+        <p>Bir StarWars filmi</p>
         <ApolloProvider client={client}>
           {/* Filmlerin Listelemesi */}
           <div className="section">
@@ -53,7 +54,7 @@ class Film extends React.Component{
       </div>
     );
   }
-  
+
 }
 
 export default Film;

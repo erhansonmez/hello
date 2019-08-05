@@ -46,6 +46,9 @@ p, h3{
   text-decoration: none;
   color: #ffcb00;
 }
+.box h3 a:hover{
+  text-decoration: underline;
+}
 .box h3{
   font-size: 16px;
   margin-bottom: 10px;
@@ -76,4 +79,17 @@ p, h3{
 }
 .nav a.current{
   color: #fff;
+}
+.goback{
+  display: inline-block;
+  border: 1px solid;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.goback:hover{
+  background-color: #fff;
+  color: #000;
 }

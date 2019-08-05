@@ -34,7 +34,7 @@ class App extends React.Component{
         <Route component={Filmler} path="/filmler" exact />
         <Route component={Oyuncular} path="/oyuncular" exact />
         <Route component={Film} path="/filmler/:filmId" />
-        <Route component={Oyuncu} path="/oyuncular/:oyuncuId" />
+        <Route component={Oyuncu} path="/oyuncu/:oyuncuId" />
       </Router>
       </div>
     );
