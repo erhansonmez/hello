@@ -27,7 +27,7 @@ class App extends React.Component{
         <div className="nav">
           <Link to="/">Anasayfa</Link>
           <Link to="/filmler">Filmler</Link>
-          <Link to="/oyuncular">Oyuncular</Link>
+          <Link to="/oyuncular">Karakterler</Link>
         </div>
         {/* Rota Bileşenleri */}
         <Route component={Anasayfa} path="/" exact />

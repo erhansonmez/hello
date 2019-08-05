@@ -35,7 +35,7 @@ class Oyuncular extends React.Component{
             <div className="section-wrapper">
             <Query query={this.allPersonsGqlStr}>
               {({ loading, error, data }) => {
-                if (loading) return <p>Filmler Yükleniyor...</p>;
+                if (loading) return <p>Oyuncular Yükleniyor...</p>;
                 if (error) return <p>Hata :(</p>;  
                 return data.allPersons.map(({ id, name, gender, eyeColor, skinColor }) => (
                   <div className="box oyuncu" key={id}>
