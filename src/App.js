@@ -5,10 +5,16 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 // Rotalar için sınıfarı dahil ediyoruz
 import Anasayfa from "./pages/Anasayfa";
+
+// Listeleme Sayfaları
 import Filmler from "./pages/Filmler";
 import Oyuncular from "./pages/Oyuncular";
+
+// Detay Sayfaları
 import Film from "./pages/Film";
 import Oyuncu from "./pages/Oyuncu";
+
+// Hata Sayfaları
 import Error_404 from "./pages/Error_404";
 
 class App extends React.Component{
@@ -29,7 +35,6 @@ class App extends React.Component{
         <Route component={Oyuncular} path="/oyuncular" exact />
         <Route component={Film} path="/filmler/:filmId" />
         <Route component={Oyuncu} path="/oyuncular/:oyuncuId" />
-        <Route component={Error_404} />
       </Router>
       </div>
     );
