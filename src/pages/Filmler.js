@@ -27,11 +27,11 @@ class Filmler extends React.Component{
   render() {
     return (
       <div className="wrapper filmler">
-        <p>StarWars filmlerinin tamamı</p>
         <ApolloProvider client={client}>
           {/* Filmlerin Listelemesi */}
           <div className="section">
             <h2>Filmler</h2>
+            <p>StarWars filmlerinin tamamı</p>
             <div className="section-wrapper">
             <Query query={this.allFilmsGqlStr}>
               {({ loading, error, data }) => {
